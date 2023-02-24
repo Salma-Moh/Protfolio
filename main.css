@@ -67,7 +67,7 @@ a {
     text-decoration: none;
 }
 
-#menu__toggle{
+#menu__toggle {
     visibility: hidden;
 }
 
@@ -124,13 +124,13 @@ main img {
     width: 22em;
     border-radius: 2px;
     box-shadow: 10px -10px var(--color),
-    10px -10px 0 5px var(--color3),
-    -10px 10px var(--color),
-    10px 10px 0 5px var(--color3),
-    -10px 10px var(--color),
-    -10px 10px 0 5px var(--color3),
-    10px -10px var(--color),
-    -10px -10px 0 5px var(--color3);
+        10px -10px 0 5px var(--color3),
+        -10px 10px var(--color),
+        10px 10px 0 5px var(--color3),
+        -10px 10px var(--color),
+        -10px 10px 0 5px var(--color3),
+        10px -10px var(--color),
+        -10px -10px 0 5px var(--color3);
 }
 
 main p {
@@ -331,7 +331,7 @@ footer span {
         list-style: none;
         background-color: var(--color3);
         transition-duration: .25s;
-}
+    }
 
     .menu__item {
         display: block;
@@ -346,18 +346,23 @@ footer span {
     .menu__item:hover {
         background-color: #CFD8DC;
     }
+
     header {
         font-size: 1em;
     }
+
     header img {
         width: 10em;
     }
+
     article {
         width: 80% !important;
     }
+
     section img {
         width: 65% !important;
     }
+
     .me {
         font-size: 1.5em;
     }
@@ -367,16 +372,25 @@ footer span {
     header img {
         width: 8em;
     }
+
     main img {
         width: 12em !important;
     }
+
     section img {
         width: 100% !important;
     }
+
     .me {
         font-size: 1em;
     }
+
+    main {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
 }
+
 @media screen and (max-width: 480px) {
     .me {
         font-size: 0.5em;
