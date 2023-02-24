@@ -19,18 +19,19 @@
         <header>
             <img src="/img/logo1-removebg.png" alt="logo">
             <nav>
-                <a href="#">
-                    <h2 class="home">Home</h2>
-                </a>
-                <a href="#about">
-                    <h2>About</h2>
-                </a>
-                <a href="#projects">
-                    <h2>Projects</h2>
-                </a>
-                <a href="https://drive.google.com/drive/folders/1IqeUNuaXHRCRXmRoM0WL7_GHJxCXybyc?usp=share_link">
-                    <h2>Certfications</h2>
-                </a>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menu__box">
+                        <li><a class="menu__item home" href="#">Home</a></li>
+                        <li><a class="menu__item" href="#about">About</a></li>
+                        <li><a class="menu__item" href="#projects">Projects</a></li>
+                        <li><a class="menu__item" href="https://drive.google.com/drive/folders/1IqeUNuaXHRCRXmRoM0WL7_GHJxCXybyc?usp=share_link">Certfications</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <div class="me">
