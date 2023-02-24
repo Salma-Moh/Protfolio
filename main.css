@@ -28,7 +28,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent, var(--color1));
+    background: linear-gradient(transparent, transparent, var(--color1), transparent, transparent);
     border-radius: 20px;
 }
 
@@ -199,6 +199,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 section img {
@@ -243,9 +244,9 @@ footer .fa-facebook:hover {
     color: #3c80ec;
 }
 
-footer .fa-whatsapp:hover {
+footer .fa-linkedin-in:hover {
     transition: .5s;
-    color: var(--color1);
+    color: #2596ce;
 }
 
 footer .fa-google:hover {
