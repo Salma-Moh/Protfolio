@@ -3,60 +3,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
 
 :root {
-    --color:#fff;
-    --color1:#1af479;
-    --color2:#000;
-    --color3:#555;
-    --color4:#0ce168;
+    --color: #fff;
+    --color1: #1af479;
+    --color2: #000;
+    --color3: #555;
+    --color4: #0ce168;
 }
-*{
+
+* {
     color: var(--color);
+    user-select: none;
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: 'Tilt Neon', cursive;
+    overflow: overlay;
 }
-header{
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent,var(--color1));
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+header {
     padding: 1em;
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/slider-02.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/slider-02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-header header{
+
+header header {
     background: transparent;
     justify-content: space-between;
     display: flex;
     gap: 5em;
 }
+
 header img {
     width: 15em;
     border-radius: 50%;
 }
-header nav{
-    
+
+header nav {
+
     margin-top: auto;
     margin-bottom: auto;
     display: flex;
     gap: 1em;
 }
+
 a {
     text-decoration: none;
 }
+
 .home {
     text-decoration: underline;
     color: var(--color1);
 }
+
 a h2 {
     transition: .5s;
-
 }
+
 a h2:hover {
     transition: .5s;
     color: var(--color1);
 }
-header section {
+
+.me {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -65,18 +90,21 @@ header section {
     font-size: 1.8em;
     text-align: center;
 }
-header section h1 {
+
+.me h1 {
     font-family: 'Crimson Text', serif;
     /* font-family: 'Dancing Script', cursive; */
     color: var(--color1);
 }
-section hr {
+
+.me hr {
     border: none;
     border-top: 1px dashed var(--color3);
     color: transparent;
     background-color: transparent;
     height: 1px;
 }
+
 main {
     font-size: 1.2em;
     padding-top: 8.7em;
@@ -86,25 +114,29 @@ main {
     flex-wrap: wrap;
     gap: 5em;
 }
+
 main img {
     width: 22em;
     border-radius: 2px;
     box-shadow: 10px -10px var(--color),
-                10px -10px 0 5px var(--color3),
-                -10px 10px var(--color),
-                10px 10px 0 5px var(--color3),
-                -10px 10px var(--color),
-                -10px 10px 0 5px var(--color3),
-                10px -10px var(--color),
-                -10px -10px 0 5px var(--color3);
+        10px -10px 0 5px var(--color3),
+        -10px 10px var(--color),
+        10px 10px 0 5px var(--color3),
+        -10px 10px var(--color),
+        -10px 10px 0 5px var(--color3),
+        10px -10px var(--color),
+        -10px -10px 0 5px var(--color3);
 }
+
 main p {
     color: var(--color3);
 }
-main section{
+
+main article {
     width: 40%;
     color: var(--color2);
 }
+
 main h1 {
     color: var(--color2);
     padding-left: 10px;
@@ -113,25 +145,31 @@ main h1 {
     letter-spacing: 2px;
     font-family: 'Crimson Text', serif;
 }
+
 main .about {
     display: flex;
     justify-content: space-between;
 }
+
 main div p {
     color: var(--color3);
 }
-main div b{
+
+main div b {
     color: var(--color2);
 }
+
 main button a h3 {
     margin: 0;
     color: var(--color);
 }
+
 .button {
     display: flex;
     justify-content: center;
     gap: 2em;
 }
+
 main button {
     width: 12em;
     height: 3.5em;
@@ -141,31 +179,78 @@ main button {
     background-color: var(--color1);
     transition: .5s;
 }
+
 main button:hover {
     background-color: var(--color4);
     transition: .5s;
 }
+
+section {
+    border-radius: 25px;
+    background-color: var(--color2);
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section img {
+    border-radius: 20px;
+    width: 35%;
+}
+
+section div {
+    padding: 3em;
+}
+
+section h1 abbr{
+    transition: .5s;
+}
+section h1 abbr:hover {
+    transition: .5s;
+    color: var(--color1);
+}
+
 footer {
     padding: 2em;
     text-align: center;
     background-color: var(--color3);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
+
 footer .icons {
     font-size: 1.5em;
     display: flex;
     justify-content: center;
     gap: 1em;
 }
+
 footer i {
     transition: .5s;
 }
-footer i:hover{
+
+footer .fa-facebook:hover {
+    transition: .5s;
+    color: #3c80ec;
+}
+
+footer .fa-whatsapp:hover {
     transition: .5s;
     color: var(--color1);
 }
-footer span{
+
+footer .fa-google:hover {
+    transition: .5s;
+    color: #63c7ff;
+}
+
+footer .fa-github:hover {
+    transition: .5s;
+    color: var(--color2);
+}
+
+footer span {
     color: var(--color1);
     font-family: 'Smooch', cursive;
 }
