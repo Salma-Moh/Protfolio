@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Serif+Pro:wght@200&family=Tilt+Neon&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+:root {
+    --color:#fff;
+    --color1:#1af479;
+    --color2:#000;
+    --color3:#555;
+    --color4:#0ce168;
+}
+*{
+    color: var(--color);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tilt Neon', cursive;
+}
+header{
+    padding: 1em;
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/slider-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header header{
+    background: transparent;
+    justify-content: space-between;
+    display: flex;
+    gap: 5em;
+}
+header img {
+    width: 15em;
+    border-radius: 50%;
+}
+header nav{
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    gap: 1em;
+}
+a {
+    text-decoration: none;
+}
+.home {
+    text-decoration: underline;
+    color: var(--color1);
+}
+a h2 {
+    transition: .5s;
+
+}
+a h2:hover {
+    transition: .5s;
+    color: var(--color1);
+}
+header section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 4.8em;
+    margin-bottom: 8em;
+    font-size: 1.8em;
+    text-align: center;
+}
+header section h1 {
+    font-family: 'Crimson Text', serif;
+    /* font-family: 'Dancing Script', cursive; */
+    color: var(--color1);
+}
+section hr {
+    border: none;
+    border-top: 1px dashed var(--color3);
+    color: transparent;
+    background-color: transparent;
+    height: 1px;
+}
+main {
+    font-size: 1.2em;
+    margin-top: 8.7em;
+    margin-bottom: 8.7em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+main img {
+    width: 22em;
+    border-radius: 2px;
+    box-shadow: 10px -10px var(--color),
+                10px -10px 0 5px var(--color3),
+                -10px 10px var(--color),
+                10px 10px 0 5px var(--color3),
+                -10px 10px var(--color),
+                -10px 10px 0 5px var(--color3),
+                10px -10px var(--color),
+                -10px -10px 0 5px var(--color3);
+}
+main p {
+    color: var(--color3);
+}
+main section{
+    width: 40%;
+    color: var(--color2);
+}
+main h1 {
+    color: var(--color2);
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--color1);
+    letter-spacing: 2px;
+    font-family: 'Crimson Text', serif;
+}
+main .about {
+    display: flex;
+    justify-content: space-between;
+}
+main div p {
+    color: var(--color3);
+}
+main div b{
+    color: var(--color2);
+}
+main button a h3 {
+    margin: 0;
+    color: var(--color);
+}
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+main button {
+    width: 12em;
+    height: 3.5em;
+    border-radius: 7px;
+    padding: 1em;
+    border: transparent;
+    background-color: var(--color1);
+    transition: .5s;
+}
+main button:hover {
+    background-color: var(--color4);
+    transition: .5s;
+}
+footer {
+    padding: 2em;
+    text-align: center;
+    background-color: var(--color3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+footer .icons {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+footer i {
+    transition: .5s;
+}
+footer i:hover{
+    transition: .5s;
+    color: var(--color1);
+}
+footer span{
+    color: var(--color1);
+    font-family: 'Smooch', cursive;
+}
